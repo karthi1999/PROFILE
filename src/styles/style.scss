@@ -1,0 +1,92 @@
+@import './abstracts/variable';
+@import './mixins/breakpoint';
+@import './abstracts/button';
+@import './abstracts/common';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #083dec, #2dd3e9);
+    padding: 2.5rem 1rem;
+    @include min-width-sm {
+        padding: 3rem;
+    }
+    .profile-container {
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.674);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        @include min-width-sm {
+            width: 450px;
+            padding: 2.5rem;
+        }
+        .img-container {
+            transform: translateY(-50%);
+            position: absolute;
+            background-color: transparent;
+            width: 42%;
+            @include min-width-sm {
+                transform: translateY(-60%);
+                width: 45%;
+            }
+            img {
+                width: 60%;
+                border-radius: 50%;
+                box-shadow: 0 1px 10px rgba(0, 0, 0, 0.774);
+                @include min-width-sm {
+                    width: 75%;
+                }
+            }
+        }
+        .chooseImg{
+            width: 75px;
+            padding: 12px;
+            border-radius: 50%;
+        }
+        .close{
+            border: none;
+            max-width: 30px;
+            background-color: #fff;
+        }
+        .form-container{
+            padding: 40px 0 0;
+            @include min-width-sm {
+                padding: 50px 0 0;
+            }
+            .inp-box {
+                .label, .input {
+                    font-size: 12px;
+                    font-weight: 500;
+                    @include min-width-sm {
+                        font-size: 14px;
+                    }
+                }
+                .input {
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    padding-left: 0;
+                }
+            }
+            .btn-container{
+                .btn {
+                    min-width: 100px;
+                    border-radius: 0.25rem;
+                    font-size: 12px;
+                    font-weight: 500;
+                    @include min-width-sm {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
