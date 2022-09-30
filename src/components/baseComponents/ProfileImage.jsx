@@ -14,11 +14,11 @@ const ProfileImage = (
                 <img src={profileImage} alt="profile" />
             </button>
             <div className="modal" id="modal-profile" role="dialog">
-                <div className="modal-dialog modal-dialog-centered w-75 w-sm-25 mx-auto" role="document">
+                <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title">Choose Profile</h5>
-                            <button id="close" type="button" className="close w-25" data-dismiss="modal">
+                            <button id="close" type="button" className="close" data-dismiss="modal">
                                 <span aria-hidden="true"><i className="fa-solid fa-xmark"></i></span>
                             </button>
                         </div>
@@ -37,18 +37,18 @@ const ProfileImage = (
                             }
                         </div>
                         <div className="modal-footer d-flex justify-content-center">
-                            <button type="button" className="btn btn-secondary w-25" data-toggle="modal" data-target="#alert" data-dismiss="modal">Remove</button>
+                            <button type="button" className="btn btn-secondary" data-toggle="modal" data-target="#alert" data-dismiss="modal">Remove</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="modal w-sm-50" id="alert" role="dialog">
-                <div className="modal-dialog modal-dialog-centered w-75 w-sm-25 mx-auto" role="document">
+                <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <div className="modal-header d-flex justify-content-between">
                             <div></div>
                             <h5 className="modal-title">Alert</h5>
-                            <button id="close" type="button" className="close w-25" data-dismiss="modal">
+                            <button id="close" type="button" className="close" data-dismiss="modal">
                                 <span aria-hidden="true"><i className="fa-solid fa-xmark"></i></span>
                             </button>
                         </div>
@@ -56,7 +56,7 @@ const ProfileImage = (
                             Are you sure to remove your profile image
                         </div>
                         <div className="modal-footer d-flex justify-content-center">
-                            <button type="button" className="btn btn-secondary w-sm-25" data-dismiss="modal" onClick={removeHandler}>Remove</button>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={removeHandler}>Remove</button>
                         </div>
                     </div>
                 </div>

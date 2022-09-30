@@ -60,11 +60,11 @@ const Form = (
                 </Button>
             </div>
             <div className="modal" id="modal-updated" role="dialog">
-                <div className="modal-dialog modal-dialog-centered w-50 w-sm-25 mx-auto" role="document">
+                <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title">Personal Details Update</h5>
-                            <button id="close" type="button" className="close w-25" data-dismiss="modal">
+                            <button id="close" type="button" className="close" data-dismiss="modal">
                                 <span aria-hidden="true"><i className="fa-solid fa-xmark"></i></span>
                             </button>
                         </div>
@@ -77,8 +77,8 @@ const Form = (
                             </div>
                         </div>
                         <div className="modal-footer d-flex justify-content-between">
-                            <button type="button" className="btn btn-secondary w-sm-25" data-dismiss="modal" onClick={cancelHandler}>Close</button>
-                            <button type="button" className="btn btn-primary w-sm-25" data-dismiss="modal" onClick={saveHandler}>Save</button>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={cancelHandler}>Close</button>
+                            <button type="button" className="btn btn-primary" data-dismiss="modal" onClick={saveHandler}>Save</button>
                         </div>
                     </div>
                 </div>
